@@ -1,0 +1,33 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    width: auto;
+    background-color: darkslateblue;
+    text-align: center;
+}
+.flexend{
+    width: 100vw;
+}
+.flexend ul li{
+    display: flex;
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 10px;
+}
+nav ul li{
+    width: 25vw;
+}
+nav ul li:hover{
+    color: white;
+}
