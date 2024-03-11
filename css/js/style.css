@@ -75,18 +75,18 @@ header{
       margin-top: 1.5rem;
     }
     .nav > #nav-check:checked ~ .nav-list {
-      height: calc(100vh - 50px);
+      height: calc(35vh - 50px);
     }
 }
 section{
     background-color: #393e46;
     width: 100vw;
-    height: 92vh;
+    height: 78vh;
 }
 .bvn{
     margin: 0px;
     width: 100vw;
-    height: 92vh;
+    height: 78vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,5 +99,30 @@ section{
     align-items: center;
     justify-content: center;
     border: solid;
+    color: white;
+}
+footer{
+    color: white;
+    background-color: #222831;
+    height: auto;
+    text-align: center;
+}
+footer p{
+    margin: 0px;
+}
+footer ul{
+    padding: 5px;
+    gap: 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-direction: column;
+
+}
+footer h1{
+    margin: 0px;
+}
+footer a {
     color: white;
 }
