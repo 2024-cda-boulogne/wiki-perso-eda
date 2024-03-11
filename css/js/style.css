@@ -2,32 +2,102 @@ body{
     padding: 0px;
     margin: 0px;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 8vh;
-    width: auto;
-    background-color: darkslateblue;
-    text-align: center;
-}
-.flexend{
+header{
     width: 100vw;
 }
-.flexend ul li{
+.nav {
+    width: auto;
+    background-color: #222831;
     display: flex;
-    list-style: none;
-}
-nav ul{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 0px;
-    margin: 10px;
+  }
+  .nav > .nav-header {
+    flex: 0.95;
+    padding-left: 1rem;
+  }
+  .nav > .nav-header > .nav-title {
+    font-size: 22px;
+    color: #fff;
+  }
+  .nav > .nav-list {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav > .nav-list > li {
+    list-style-type: none;
+  }
+  .nav > .nav-list > li a {
+    text-decoration: none;
+    color: #efefef;
+    cursor: pointer;
+  }
+  .nav > #nav-check {
+      display: none;
+  }
+  @media (max-width: 480px) {
+    .nav {
+      padding: 1rem;
+    }
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding-top: 0.2rem;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-list {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      background-color: #222831;
+      height: 0;
+      transition: all 0.3s ease-in;
+      top: 40px;
+      left: 0;
+      overflow: hidden;
+    }
+    .nav > .nav-list > li {
+      width: 100%;
+      margin-top: 1.5rem;
+    }
+    .nav > #nav-check:checked ~ .nav-list {
+      height: calc(100vh - 50px);
+    }
 }
-nav ul li{
-    width: 25vw;
+section{
+    background-color: #393e46;
+    width: 100vw;
+    height: 92vh;
 }
-nav ul li:hover{
+.bvn{
+    margin: 0px;
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bvn p{
+    background-color: #0092ca;
+    height: 10vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid;
     color: white;
 }
