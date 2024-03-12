@@ -2,6 +2,7 @@ body{
     padding: 0px;
     margin: 0px;
     background-color: #393e46;
+    overflow-x: hidden;
 }
 header{
     width: 100vw;
@@ -76,13 +77,25 @@ header{
       margin-top: 1.5rem;
     }
     .nav > #nav-check:checked ~ .nav-list {
-      height: calc(100vh - 50px);
+      height: auto;
     }
 }
 section{
     background-color: #393e46;
     width: 100vw;
     height: 92vh;
+    display: flex;
+    justify-content: center;
+}
+.bvn ul li{
+    color: white;
+}
+.table{
+    padding: 20px;
+    color: white;
+}
+.table th{
+    padding: 30px;
 }
 .bvn{
     margin: 0px;
@@ -118,4 +131,5 @@ footer li{
 }
 footer ul{
     list-style: none;
+    padding: 0px;
 }
