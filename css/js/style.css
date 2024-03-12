@@ -87,6 +87,14 @@ section{
     display: flex;
     justify-content: center;
 }
+#merise{
+  height: auto;
+  color: white;
+  padding: 20px;
+}
+#merise a{
+  color: white;
+}
 .bvn ul li{
     color: white;
 }
