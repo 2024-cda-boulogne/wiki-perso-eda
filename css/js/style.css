@@ -1,6 +1,7 @@
 body{
     padding: 0px;
     margin: 0px;
+    background-color: #393e46;
 }
 header{
     width: 100vw;
@@ -100,4 +101,21 @@ section{
     justify-content: center;
     border: solid;
     color: white;
+}
+footer{
+    text-align: center;
+    background-color: #393e46;
+}
+footer h1{
+    margin: 0px;
+    color: white;
+}
+footer a{
+    color: white;
+}
+footer li{
+    color: white;
+}
+footer ul{
+    list-style: none;
 }
