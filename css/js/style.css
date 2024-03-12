@@ -111,6 +111,15 @@ body.dark-mode .table {
 .table th{
     padding: 30px;
 }
+table{
+  width: 100vw;
+}
+.table{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .bvn{
     margin: 0px;
     width: 100vw;
