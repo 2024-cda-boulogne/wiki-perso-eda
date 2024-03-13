@@ -36,6 +36,7 @@
     display: flex;
     align-items: center;
     padding: 0px;
+    margin: 0px;
   }
   .nav > .nav-header {
     flex: 0.95;
@@ -104,6 +105,23 @@
     .nav > #nav-check:checked ~ .nav-list {
       height: auto;
     }
+}
+@media (max-width: 800px) {
+  .flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .diag:nth-child(5) {
+     margin-top: 0px;
+}
+.diag{
+  height: auto;
+}
+.diag img{
+  height: 200px;
+  width: 200px;
+}
 }
 section{
     width: 100vw;
