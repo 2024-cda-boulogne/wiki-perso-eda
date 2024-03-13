@@ -2,13 +2,15 @@
       padding: 0px;
       margin: 0px;
       overflow-x: hidden;
+      font-family: system-ui;
+      font-size: large;
   }
   header{
       width: 100vw;
   }
   .nav > .nav-list > li.active a {
     text-decoration: underline;
-    color: red;
+    color: #00ff1e;
     cursor: pointer;
     font-size: 19px;
   }
@@ -29,6 +31,9 @@
 }
 .diag:nth-child(5){
   margin-top: -50px;
+}
+.nav-list{
+  text-align: center;
 }
 .nav {
     width: auto;
@@ -148,10 +153,7 @@ body.dark-mode #merise a{
 .bvn ul li{
     color: white;
 }
-body.dark-mode,
-body.dark-mode .table {
-  color: white;
-}
+
 .table th{
     padding: 30px;
 }
@@ -172,14 +174,12 @@ table{
     justify-content: center;
 }
 .bvn p{
-    background-color: #0092ca;
     height: 10vh;
     width: 80vw;
     display: flex;
     align-items: center;
     justify-content: center;
     border: solid;
-    color: white;
 }
 footer{
   gap: 50px;
@@ -283,7 +283,9 @@ input:checked ~ .toggle span {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
+.nav > .nav-list ul{
+  text-align: center;
+}
 .popup-contenu {
     position: absolute;
     top: 50%;
@@ -301,4 +303,16 @@ input:checked ~ .toggle span {
     right: 10px;
     font-size: 20px;
     cursor: pointer;
+}
+.dark-mode nav{
+  background-color: #383838;
+}
+.dark-mode .nav-list{
+  background-color: #383838;
+}
+.dark-mode footer{
+  background-color: #383838;
+}
+.dark-mode .popup-contenu{
+  background-color: #383838;
 }
