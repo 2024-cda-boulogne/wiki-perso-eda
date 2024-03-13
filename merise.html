@@ -11,6 +11,14 @@
         <nav class="nav">
             <input type="checkbox" id="nav-check">
             <div class="nav-header">
+              <input
+              type="checkbox"
+              class="sr-only"
+              id="darkmode-toggle"
+            >
+            <label for="darkmode-toggle" class="toggle">
+              <span>Toggle dark mode</span>
+            </label>
               <div class="nav-title">
                 Wiki Perso E.dsr
               </div>
@@ -24,22 +32,65 @@
             </div>
             
             <ul class="nav-list">
-              <li><a href="/wiki.html">Accueil</a></li>
-              <li><a href="/commande.html">Commande Git</a></li>
-              <li><a href="/uml.html">Diagrammes UML</a></li>
-            </ul>
+              <li class="accueil"><a href="/wiki.html">Accueil</a></li>
+              <li class="commande"><a href="/commande.html">Commande Git</a></li>
+              <li class="uml"><a href="/uml.html">Diagrammes UML</a></li>
+              <li class="merise"><a href="/merise.html">Méthode Merise</a></li>
+            </ul> 
           </nav>
     </header>
-    <section>
-        <div class="bvn">
-            <p>Bienvenue sur mon wiki perso </p>
+    <section id="merise">
+        <div class="merise">
+            <p>Un diagramme Merise fait référence à une technique de modélisation de données largement utilisée dans le domaine du développement logiciel. Il est particulièrement associé à la méthode Merise, une méthode d'analyse et de conception de systèmes d'information.
+              Le diagramme Merise représente la structure des données d'un système, en se concentrant sur les entités (objets du monde réel), leurs attributs et les relations entre elles. Il utilise des symboles graphiques pour illustrer ces concepts. </p>
+              <div class="table">
+              <table>
+                <tr>
+                  <th>Element</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <th>Dictionnaire de données</th>
+                  <th>Le dictionnaire des données est un document qui regroupe toutes les données que vous aurez à conserver dans votre base (et qui figureront donc dans le MCD).
+                    <br>
+                    <a href="https://www.univ-constantine2.dz/CoursOnLine/Benelhadj-Mohamed/co/grain3_2.html">https://www.univ-constantine2.dz/CoursOnLine/Benelhadj-Mohamed/co/grain3_2.html</a>
+                  </th>
+                </tr>
+                <tr>
+                  <th>Règle de gestion</th>
+                  <th>L’exercice consiste à écrire en français (ou dans la langue de votre choix) une phrase décrivant comment sont associés deux concepts.
+                    <br>
+                    <a href="https://blog.developpez.com/cinephil/p10397/bases-de-donnees/regle_de_gestion_bien_ecrite_g_modelisat">https://blog.developpez.com/cinephil/p10397/bases-de-donnees/regle_de_gestion_bien_ecrite_g_modelisat</a>
+                  </th>
+                </tr>
+                <tr>
+                  <th>MCD</th>
+                  <th>Dans la méthodologie Merise destinée à créer des bases de données, il existe des outils dédiés aux traitements et aux données. Le MCD (Modèle Conceptuel des Données) est un des outils majeurs concernant les données. <br>
+                    <a href="https://www.base-de-donnees.com/mcd/">https://www.base-de-donnees.com/mcd/</a></th>
+                </tr>
+                <tr>
+                  <th>MLD</th>
+                  <th>Les entités mises en relation deviennent des tables. 
+                    <br>
+                    <a href="https://louisvandevelde.be/index.php?dos=my&fic=meris">https://louisvandevelde.be/index.php?dos=my&fic=meris</a>
+                  </th>
+                </tr>
+                <tr>
+                  <th>MLD</th>
+                  <th>Dans la méthodologie Merise, le MPD (Modèle Physique des Données) fait suite au MCD. Ensuite viendra le MLD.
+                    <br>
+                    <a href="https://www.base-de-donnees.com/mpd/">https://www.base-de-donnees.com/mpd/</a>
+                  </th>
+                </tr>
+              </table>
+            </div>
         </div>
     </section>
     <footer>
         <h1>Mes reseaux</h1>
         <ul>
-            <li>Linkedin: <br> <a href="https://www.linkedin.com/in/eric-da-silva-rocha/">https://www.linkedin.com/in/eric-da-silva-rocha/</a></li>
-            <li>Github: <br> <a href="https://github.com/Ericdsr">https://github.com/Ericdsr</a></li>
+          <li>Linkedin: <br> <a href="https://www.linkedin.com/in/eric-da-silva-rocha/">https://www.linkedin.com/in/eric-da-silva-rocha/</a></li>
+          <li>Github: <br> <a href="https://github.com/Ericdsr">https://github.com/Ericdsr</a></li>
         </ul>
     </footer>
 <script src="/css/js/script.js"></script>

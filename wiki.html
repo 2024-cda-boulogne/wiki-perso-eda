@@ -2,62 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+     <meta name="author" content="Eric dsr">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/js/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-vertical-left">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="#" class="one">
-                            <i class="fa fa-fw fa-lg fa-home"></i> 
-                            <span>Главная</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="two">
-                            <i class="fa fa-fw fa-lg fa-star"></i> 
-                            <span>Топ 100</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="tree">
-                            <i class="fa fa-fw fa-lg fa-newspaper-o"></i> 
-                            <span>Шаблоны</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="for">
-                            <i class="fa fa-fw fa-lg fa-cog"></i> 
-                            <span>Плагины</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="five">
-                            <i class="fa fa-fw fa-lg fa-code"></i> 
-                            <span>Сниппеты</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="six">
-                            <i class="fa fa-fw fa-lg fa-money"></i> 
-                            <span>Заработать</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+        <nav class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <input
+                type="checkbox"
+                class="sr-only"
+                id="darkmode-toggle"
+              >
+              <label for="darkmode-toggle" class="toggle">
+                <span>Toggle dark mode</span>
+              </label>
+
+              <div class="nav-title">
+                Wiki Perso E.dsr
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
             
-            </div>
-            </div>
+            <ul class="nav-list">
+              <li class="accueil"><a href="/wiki.html">Accueil</a></li>
+              <li class="commande"><a href="/commande.html">Commande Git</a></li>
+              <li class="uml"><a href="/uml.html">Diagrammes UML</a></li>
+              <li class="merise"><a href="/merise.html">Méthode Merise</a></li>
+            </ul>            
+          </nav>
     </header>
     <section>
         <div class="bvn">
             <p>Bienvenue sur mon wiki perso </p>
         </div>
+    </section>
+    <section>
+      <div class="bouton">
+        <button onclick="afficherPopup()">A propos</button>
+        <div id="popup" class="popup">
+            <div class="popup-contenu">
+                <span class="fermer" onclick="fermerPopup()">&times;</span>
+                <p>Ceci est mon wiki perso / Eric da silva rocha</p>
+            </div>
+        </div>
+      </div>
     </section>
     <footer>
         <h1>Mes reseaux</h1>
