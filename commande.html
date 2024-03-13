@@ -8,38 +8,48 @@
     <title>Commandegit</title>
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-header">
-              <label for="darkmode-toggle" class="toggle">
-                <span>Toggle dark mode</span>
-              </label>
-              <div class="nav-title">
-                Wiki Perso E.dsr
+
+  <header>
+    <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <input
+            type="checkbox"
+            class="sr-only"
+            id="darkmode-toggle"
+          >
+          <label for="darkmode-toggle" class="toggle">
+            <span>Toggle dark mode</span>
+          </label>
+
+          <div class="nav-title">
+            Wiki Perso E.dsr
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="bouton">
+          <button onclick="afficherPopup()">A propos</button>
+          <div id="popup" class="popup">
+              <div class="popup-contenu">
+                  <span class="fermer" onclick="fermerPopup()">&times;</span>
+                  <p>Ceci est mon wiki perso / Eric da silva rocha</p>
               </div>
-            <input
-              type="checkbox"
-              class="sr-only"
-              id="darkmode-toggle"
-            >
-            </div>
-            <div class="nav-btn">
-              <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-              </label>
-            </div>
-            
-            <ul class="nav-list">
-              <li class="accueil"><a href="index.html">Accueil</a></li>
-              <li class="commande"><a href="commande.html">Commande Git</a></li>
-              <li class="uml"><a href="uml.html">Diagrammes UML</a></li>
-              <li class="merise"><a href="merise.html">Méthode Merise</a></li>
-            </ul> 
-          </nav>
-    </header>
+          </div>
+        </div>
+        <ul class="nav-list">
+          <li class="accueil"><a href="index.html">Accueil</a></li>
+          <li class="commande"><a href="commande.html">Commande Git</a></li>
+          <li class="uml"><a href="uml.html">Diagrammes UML</a></li>
+          <li class="merise"><a href="merise.html">Méthode Merise</a></li>
+        </ul>            
+      </nav>
+</header>
     <section>
         <div class="table">
          <div id="merise">

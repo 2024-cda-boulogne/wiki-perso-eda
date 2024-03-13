@@ -5,69 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Free Web tutorials">
     <link rel="stylesheet" href="css/js/style.css">
-    <title>Document</title>
+    <title>UML</title>
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-header">
-              <label for="darkmode-toggle" class="toggle">
-                <span>Toggle dark mode</span>
-              </label>
-              <div class="nav-title">
-                Wiki Perso E.dsr
+    
+  <header>
+    <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <input
+            type="checkbox"
+            class="sr-only"
+            id="darkmode-toggle"
+          >
+          <label for="darkmode-toggle" class="toggle">
+            <span>Toggle dark mode</span>
+          </label>
+
+          <div class="nav-title">
+            Wiki Perso E.dsr
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="bouton">
+          <button onclick="afficherPopup()">A propos</button>
+          <div id="popup" class="popup">
+              <div class="popup-contenu">
+                  <span class="fermer" onclick="fermerPopup()">&times;</span>
+                  <p>Ceci est mon wiki perso / Eric da silva rocha</p>
               </div>
-              <input
-              type="checkbox"
-              class="sr-only"
-              id="darkmode-toggle"
-              >
-            </div>
-            <div class="nav-btn">
-              <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-              </label>
-            </div>
-            
-            <ul class="nav-list">
-              <li class="accueil"><a href="index.html">Accueil</a></li>
-              <li class="commande"><a href="commande.html">Commande Git</a></li>
-              <li class="uml"><a href="uml.html">Diagrammes UML</a></li>
-              <li class="merise"><a href="merise.html">Méthode Merise</a></li>
-            </ul> 
-          </nav>
-    </header>
+          </div>
+        </div>
+        <ul class="nav-list">
+          <li class="accueil"><a href="index.html">Accueil</a></li>
+          <li class="commande"><a href="commande.html">Commande Git</a></li>
+          <li class="uml"><a href="uml.html">Diagrammes UML</a></li>
+          <li class="merise"><a href="merise.html">Méthode Merise</a></li>
+        </ul>            
+      </nav>
+</header>
     <section>
       <div class="flex">
           <div class="diag">
             <h2>Diagramme de séquence</h2>
             <p>Un diagramme de séquence est un type de diagramme UML qui montre comment une opération. Ce diagramme se concentre sur le temps car il affiche l’ordre d’interaction graphiquement via l’axe vertical pour représenter le temps. </p>
-              <img src="/img/350px-Restaurant_UML_SEQ.svg.png" alt="">
+              <img src="img/350px-Restaurant_UML_SEQ.svg.png" alt="">
           </div>
           <div class="diag">
             <h2>Diagramme de cas d’utilisation</h2>
             <p>Le diagramme de cas d’utilisation dans UML est une sorte de diagramme qui utilise des acteurs et des cas d’utilisation pour décrire les fonctionnalités du système. Les actions, services et fonctions que le système doit exécuter sont ce que vous avez appelé les «cas d’utilisation». Alors que les entités qui opèrent sous des rôles spécifiques trouvés dans le système sont les «acteurs». Et le «système» est celui qui est en cours de développement.</p>
-            <img src="/img/Diagramme_use_case.png" alt="">
+            <img src="img/Diagramme_use_case.png" alt="">
           </div>
           <div class="diag">
             <h2>Diagramme d’activité</h2>
             <p>Ce type de diagramme présente une présentation visuelle d’une série d’actions ou d’un flux de contrôle dans un certain système qui est identique à un organigramme ou un diagramme de flux de données. Le diagramme d’activité a généralement un début ou «l’état initial» et une fin qui est l’état final ».</p>
-            <img src="/img/fig6_2.png" alt="">
+            <img src="img/fig6_2.png" alt="">
           </div>
           <div class="diag">
             <h2>Diagramme de déploiement</h2>
             <p>Le prochain exemple UML est le diagramme de déploiement. Ce type de diagramme montre la disposition physique des artefacts sur les nœuds. Les diagrammes de déploiement sont considérés comme pertinents dans le cas où votre solution logicielle est distribuée sur différentes machines, chacune ayant une configuration distincte.</p>
-            <img src="/img/1200px-UML_Diagram_Deployment.svg.png" alt="">
+            <img src="img/1200px-UML_Diagram_Deployment.svg.png" alt="">
           </div>
           <div class="diag">
             <h2>Diagramme de classe</h2>
             <p>Ce type d’exemples de diagrammes UML est souvent appelé le fondement principal de toute solution orientée objet. Son utilisation est pour la modélisation conceptuelle de la structure réelle du système et la modélisation détaillée. Il est également possible avec les diagrammes de classes de faire de la modélisation des données.
 
               Dans ce diagramme, les classes sont divisées en trois compartiments contenus dans une boîte. Le nom doit être en haut, suivi des attributs au milieu et des opérations en bas.</p>
-            <img src="/img/LOM_base_schema.svg.png" alt="">
+            <img src="img/LOM_base_schema.svg.png" alt="">
           </div>
        </div>
     </section>
