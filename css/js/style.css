@@ -1,16 +1,42 @@
-body{
-    padding: 0px;
-    margin: 0px;
-    overflow-x: hidden;
+  body{
+      padding: 0px;
+      margin: 0px;
+      overflow-x: hidden;
+  }
+  header{
+      width: 100vw;
+  }
+  .nav > .nav-list > li.active a {
+    text-decoration: underline;
+    color: red;
+    cursor: pointer;
+    font-size: 19px;
+  }
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
-header{
-    width: 100vw;
+.diag{
+  height: 50vh;
+  width: 40vw;
+}
+.diag img{
+  width: auto;
+  height: 200px;
+}
+.diag:nth-child(5){
+  margin-top: -50px;
 }
 .nav {
     width: auto;
     background-color: #222831;
     display: flex;
     align-items: center;
+    padding: 0px;
+    margin: 0px;
   }
   .nav > .nav-header {
     flex: 0.95;
@@ -29,7 +55,7 @@ header{
   }
   .nav > .nav-list > li a {
     text-decoration: none;
-    color: #efefef;
+    color: white;
     cursor: pointer;
   }
   .nav > #nav-check {
@@ -37,6 +63,7 @@ header{
   }
   @media (max-width: 480px) {
     .nav {
+      width: 100vw;
       padding: 1rem;
     }
     .nav > .nav-btn {
@@ -78,6 +105,23 @@ header{
     .nav > #nav-check:checked ~ .nav-list {
       height: auto;
     }
+}
+@media (max-width: 800px) {
+  .flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .diag:nth-child(5) {
+     margin-top: 0px;
+}
+.diag{
+  height: auto;
+}
+.diag img{
+  height: 200px;
+  width: 200px;
+}
 }
 section{
     width: 100vw;
