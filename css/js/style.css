@@ -12,7 +12,24 @@
     cursor: pointer;
     font-size: 19px;
   }
-
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.diag{
+  height: 50vh;
+  width: 40vw;
+}
+.diag img{
+  width: auto;
+  height: 200px;
+}
+.diag:nth-child(5){
+  margin-top: -50px;
+}
 .nav {
     width: auto;
     background-color: #222831;
