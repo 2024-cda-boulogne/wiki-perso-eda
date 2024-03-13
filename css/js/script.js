@@ -19,3 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
     link.parentElement.classList.add('active');
   }
 });
+
+function afficherPopup() {
+  var popup = document.getElementById('popup');
+  popup.style.display = 'block';
+}
+
+function fermerPopup() {
+  var popup = document.getElementById('popup');
+  popup.style.display = 'none';
+}
