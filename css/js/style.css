@@ -159,6 +159,8 @@ section{
       text-align: center;
       bottom: 0px;
       position: fixed;
+      justify-content: space-around;
+      display: flex;
 }
 .cmd{
     width: 100vw;
@@ -235,7 +237,10 @@ footer li{
     color: white;
 }
 footer ul{
-  margin: 0px;
+
+    gap: 20px;
+    display: flex;
+    margin: 0px;
     list-style: none;
     padding: 0px;
 }
