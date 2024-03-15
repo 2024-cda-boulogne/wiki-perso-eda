@@ -5,15 +5,18 @@
       font-family: system-ui;
       font-size: large;
   }
-  header{
-      width: 100vw;
-  }
   .nav > .nav-list > li.active a {
     text-decoration: underline;
     color: #00ff1e;
     cursor: pointer;
     font-size: 19px;
   }
+.nav-list{
+  padding: 0px;
+}
+.table tr th{
+  padding: 0px;
+}
 .flex{
     display: flex;
     align-items: center;
@@ -34,6 +37,20 @@
 }
 .nav-list{
   text-align: center;
+}
+.merise{
+  width: 100%;
+}
+.table{
+  width: 100%;
+}
+.table tr{
+  width: 100%;
+}
+.tb{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .nav {
     width: auto;
@@ -68,7 +85,6 @@
   }
   @media (max-width: 480px) {
     .nav {
-      width: 100vw;
       padding: 1rem;
     }
     .nav > .nav-btn {
@@ -127,11 +143,39 @@
   height: 200px;
   width: 200px;
 }
+footer{
+  width: 100vw;
+}
 }
 section{
     width: 100vw;
     display: flex;
     justify-content: center;
+}
+.indx{
+      width: 100vw;
+      align-items: center;
+      background-color: #393e46;
+      text-align: center;
+      bottom: 0px;
+      position: fixed;
+      justify-content: space-around;
+      display: flex;
+}
+.cmd{
+    width: 100vw;
+    align-items: center;
+    background-color: #393e46;
+    text-align: center;
+    bottom: 0px;
+    position: fixed;
+}
+.meri{
+    width: 100vw;
+    align-items: center;
+    background-color: #393e46;
+    text-align: center;
+    position: absolute;
 }
 #merise{
   height: auto;
@@ -157,18 +201,13 @@ body.dark-mode #merise a{
 .table th{
     padding: 30px;
 }
-table{
-  width: 100vw;
-}
 .table{
   display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 .bvn{
     margin: 0px;
-    width: 100vw;
+     
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,13 +221,8 @@ table{
     border: solid;
 }
 footer{
-  gap: 50px;
-  justify-content: center;
-  width: 100vw;
-  bottom: 0px;
+   
   align-items: center;
-  display: flex;
-  position: fixed;
   background-color: #393e46;
   text-align: center;
 }
@@ -203,7 +237,10 @@ footer li{
     color: white;
 }
 footer ul{
-  margin: 0px;
+
+    gap: 20px;
+    display: flex;
+    margin: 0px;
     list-style: none;
     padding: 0px;
 }
