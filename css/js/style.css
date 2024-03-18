@@ -55,6 +55,50 @@ body {
 .merise {
   width: 100%;
 }
+.merise {
+  text-align: center;
+}
+.merise {
+  padding-right: 80px;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: auto;
+  text-align: center;
+  width: 50%;
+}
+.table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  text-align: center;
+  width: 50%;
+}
+
+.item {
+  border: 4px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.item h3 {
+  margin-top: 0;
+}
+
+.item p {
+  margin-bottom: 10px;
+}
+
+.item a {
+  display: block;
+  text-decoration: underline;
+  color: #007bff;
+}
+.item ul {
+  list-style-type: none;
+}
 .table {
   width: 100%;
 }
@@ -248,7 +292,9 @@ body.dark-mode #merise a {
 .bvn ul li {
   color: white;
 }
-
+.table p {
+  margin: 2rem;
+}
 .table th {
   padding: 30px;
 }
@@ -256,10 +302,23 @@ body.dark-mode #merise a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+.tablee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.tablee table tbody tr th {
+  padding: 20px;
 }
 .bvn {
   margin: 0px;
