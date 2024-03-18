@@ -273,7 +273,6 @@ section {
   position: absolute;
 }
 #merise {
-  background-color: cadetblue;
   height: auto;
 }
 body.dark-mode,
@@ -293,7 +292,9 @@ body.dark-mode #merise a {
 .bvn ul li {
   color: white;
 }
-
+.table p {
+  margin: 2rem;
+}
 .table th {
   padding: 30px;
 }
@@ -304,12 +305,20 @@ body.dark-mode #merise a {
   background: rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(12.7px);
-  -webkit-backdrop-filter: blur(3.2px);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+.tablee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.tablee table tbody tr th {
+  padding: 20px;
 }
 .bvn {
   margin: 0px;
