@@ -31,7 +31,7 @@
 
 - [x] SEO International : Appliquez l'attribut lang sur certaines balises si elles contiennent quelques lignes de texte écrites dans une langue différente.
 
-- [ ] Méta Tags Sociaux : Intégrez Open Graph et Twitter Cards.
+- [x] Méta Tags Sociaux : Intégrez Open Graph et Twitter Cards.
 
 ## Accessibilité
 
@@ -59,7 +59,7 @@
 
 ## Avant la Mise en Ligne
 
-- [ ] Optimisation des Images : Réduisez la taille des fichiers sans perdre en qualité.
+- [x] Optimisation des Images : Réduisez la taille des fichiers sans perdre en qualité.
 
 - [ ] Minification du CSS/JS : Réduisez la taille des fichiers CSS et JavaScript.
 
