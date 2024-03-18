@@ -5,9 +5,9 @@
 
 ## SEO
 
-- [ ] Présence d'un fichier Robots.txt : Permettre ou resteindre l'accès aux bots. 
+- [x] Présence d'un fichier Robots.txt : Permettre ou resteindre l'accès aux bots. 
 
-- [ ] Présence d'un fichier Sitemap XML : Faciliter la compréhension de la structure du site par les moteurs de recherche.
+- [x] Présence d'un fichier Sitemap XML : Faciliter la compréhension de la structure du site par les moteurs de recherche.
 
 - [x] Vitesse du Site : Utilisez Google Lighthouse pour identifier les problèmes de performance
 
